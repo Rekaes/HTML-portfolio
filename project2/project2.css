@@ -1,0 +1,69 @@
+body {
+  height: fit-content;
+  background-image: linear-gradient(to top right, rgba(214, 185, 106, 0.829), rgba(83, 195, 199, 0.623));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#header {
+  height:fit-content;
+  width:auto;
+  background-image: linear-gradient(to top left, rgba(83, 195, 199, 0.623), rgb(233, 195, 114));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: double;
+  border-bottom-width: 3px;
+}
+
+.text-transition{
+  font-size: 1.2;
+  text-align: center;
+  animation-name: colorcycle;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
+
+@keyframes colorcycle {
+  0% {color: #b99c6b; }
+  10% {color: #8f3b1b; }
+  20% {color: #d57500; }
+  30% {color: #dbc869; }
+  40% {color: #404f24; }
+  50% {color: #668d3c; }
+  60% {color: #bdd09f; }
+  70% {color: #4e6172; }
+  80% {color: #83929f; }
+  90% {color: #a3adb8; }
+  100% {color: #855723; }
+}
+
+.square-image {
+  align-self: center;
+  width: 50%;
+  height: 40%;
+  object-fit: cover;
+  border-style: groove;
+  border-color:rgb(233, 195, 114);
+  border-radius: 1%;
+  border-width: 1px
+}
+.rounded-image {
+  align-self: center;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5%; 
+  border: double;
+  border-width: 4px;
+  border-color: rgba(#8f3b1b); 
+  transition: transform 0.5s ease;
+  box-shadow: #8f3b1b;
+}
+
+.rounded-image:hover {
+  transform: scale(1.1) rotate(-5deg);  
+}

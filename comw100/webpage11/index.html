@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nature</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="webpage11.css" rel="stylesheet">
+    <p><h3><a href="https://www.mottwebdev.com/student_files/rschaller/comw100/index.html">Main Page</a></h3></p>
+    
+  </head>
+
+  <body>
+    <div id="popup">
+        <div id="popup-content">
+          <span id="popup-close">&times;</span>
+          <img src="images/welcome.jpg" alt="Mossy Welcome">
+        </div>
+      </div>
+
+      <script>
+
+        window.onload = function() {
+          document.getElementById("popup").style.display = "block";
+        };
+    
+        document.getElementById("popup-close").onclick = function() {
+          document.getElementById("popup").style.display = "none";
+        };
+    
+        let slideIndex = 0;
+        const images = [
+          "images/sunflower.jpg",
+          "images/mushroom.jpg",
+          "images/trees.jpeg"
+        ];
+    
+        function changeImage() {
+          slideIndex = (slideIndex + 1) % images.length;
+          document.getElementById("slideshow").src = images[slideIndex];
+        }
+    
+        setInterval(changeImage, 3000);
+      </script>
+          
+          <h2>1. Image Popup on Page Load</h2>
+          <p>This JavaScript snippet displays a welcome image when the page loads.</p>
+        
+          <h2>2. Image Slideshow</h2>
+          <p>This JavaScript snippet automatically changes the image every few seconds.</p>
+    
+          <img id="slideshow" src="images/sunflower.jpg" alt="Slideshow Image">
+  </body>
+</html>

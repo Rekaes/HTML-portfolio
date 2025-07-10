@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Poppies</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="final.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+  background-color: rgb(207, 181, 141);
+  opacity: .8;
+}
+
+</style>
+</head>
+<body>
+    <div class ="field">
+    <!-- Navbar -->
+    <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="https://www.mottwebdev.com/student_files/rschaller/comw100/index.html" class="w3-bar-item w3-button w3-theme-l1">Portfolio</a>
+    </div>
+    </div>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item" ><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="https://www.mottwebdev.com/student_files/rschaller/final/index.html">Home</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="overview.html">Overview</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="poppy.html">Poppy</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="opium.html">Opium</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="history.html">History</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="modern.html">Modern</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+            <h1 class="headers">The Physical Description</h1>
+            <p class="paragraphs"> Poppies typically grow to be just over 3 feet tall and about 5 inches across. They usually have 4 to 6 petals form a considerable swirl within the flowers center.it is an annual plant (though in some species they are perennial) and the leaves are often white, pink, red, or even purple. 
+              The seeds are less than an inch in diameter and are kidney shaped. Their seeds are non-narcotic and can be used as food flavoring or processed into an oil. They’re a shade of blue and their aroma as well as taste can be described as' nutty'.
+            </p>
+            <p><img class="image" src="images/flower2.jpg" alt="Flower2"> | <img class="image" src="images/flower1.jpg" alt="Flower1"></p>
+            </div>
+        </div>
+        <hr/>
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+            <h1 class="headers">Cultivation</h1>
+            <h3 class="headers">It should be noted at this point as well that it IS illegal to grow opium poppies in the United States!</h3>
+            <p class="paragraphs"> Since making the manner of legality clear here, we may continue. The best climate for the opium poppy would be low in humidity and warm, such as a desert. 
+              They only require a moderate amount of water to grow properly and are photo-responsive plants. This means they require long days and short nights in order to develop flowers.
+            </p>
+            </div>
+        <hr/>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+<!-- link to template used
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->

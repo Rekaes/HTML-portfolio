@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+td {
+    text-align: center;
+}
+
+#trans1 {
+    transform: rotate(30deg) scale(0.6, 0.4);
+}
+
+.trans2 {
+    background-color: #000000;
+    font-size: 80pt;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+}
+.trans2:hover {
+    background-color: #ffffff;
+}
+
+#trans3 {
+    transform: skewX(40deg);
+}
+
+#trans3:hover {
+    transform: skewX(-30deg);
+}
+
+.trans4 {
+    -webkit-text-fill-color: rgb(255, 68, 0);
+    font-size: 90pt;
+    transition-duration: 15s;
+}
+.trans4:hover {
+    -webkit-text-fill-color: rgb(243, 146, 116);
+    font-size: 45pt;
+}
